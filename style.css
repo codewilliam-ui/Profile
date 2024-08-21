@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root{
+    --Nunito: 'Nunito', sans-serif;
+    --bg-blue: #015fa77b;
+    --bg-grey: #EEECED;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section.upload{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 280px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+
+section.upload .card h1{
+    font: 800 25px var(--Nunito)
+}
+.card{
+    box-shadow: 0 0 40px  rgba(0, 0, 0, 0.103);
+}
+.card .container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.915);
+    transition: 1s;
+}
+.card .container:hover{
+    box-shadow: none;
+}
+.card .container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+label{
+    background-color: red;
+    color: white;
+    width: 200px;
+    padding: 5px 0;
+    border-radius: 5px;
+    font: 400 16px var(--Nunito)
+}
